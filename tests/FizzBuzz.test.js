@@ -65,7 +65,7 @@ describe('Tests validating multiples of 3 and 5', () =>{
         expect(current_response).toBe(expected_response)
     });
 
-    // test('Test returns the same number when it is not divisible by 3 or 5.', () =>{
+    test('Test returns the same number when it is not divisible by 3 or 5.', () =>{
 
         /**
          * GHERKIN TEST
@@ -75,15 +75,14 @@ describe('Tests validating multiples of 3 and 5', () =>{
          */
 
         //ARRANGE: prepara el escenario, las estradas que quiero dar y las salidas que yo espero
-        // const given_number = 7;
-        // const expected_response = 7;
+        const given_number = 7;
+        const expected_response = 7;
 
         //ACT: ejecutar el escenario
-        // const current_response = fizz_buzz.validate_prime_numbers_3_5(given_number);
+        const current_response = fizz_buzz.validate_prime_numbers_3_5(given_number);
 
         //ASSERT: comprueba el escenario
-    //     expect(current_response).toBe(expected_response)
-    // });
-
+        expect(current_response).toBe(expected_response)
+    });
 
 })
